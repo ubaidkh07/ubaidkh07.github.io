@@ -449,7 +449,7 @@
       color: #333;
     }
     
-    .contact input, .contact textarea { 
+    .contact input, .contact textarea, .contact select { 
       padding: 15px; 
       border: 1px solid #ddd; 
       border-radius: 6px; 
@@ -459,7 +459,11 @@
       width: 100%;
     }
     
-    .contact input:focus, .contact textarea:focus {
+    .contact select {
+      background-color: white;
+    }
+    
+    .contact input:focus, .contact textarea:focus, .contact select:focus {
       outline: none;
       border-color: #4CAF50;
       box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
@@ -735,7 +739,7 @@
 <!-- Fixed Header with Navigation -->
 <header>
   <div class="header-container">
-    <a href="#home" class="logo">Ubaid<span>.</span></a>
+    <a href="#home" class="logo">Ubaid KH<span>.</span></a>
     
     <button class="menu-toggle" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -760,8 +764,8 @@
       <a href="#contact" class="nav-link">
         <i class="fas fa-envelope"></i> Contact
       </a>
-      <!-- Replace YOUR_GOOGLE_DRIVE_FILE_ID with your actual Google Drive CV file ID -->
-      <a href="https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID" 
+      <!-- GitHub CV Download -->
+      <a href="https://raw.githubusercontent.com/ubaidkh07/ubaidkh07.github.io/main/Ubaid_CV.pdf" 
          class="cv-button" target="_blank">
         <i class="fas fa-download"></i> Download CV
       </a>
@@ -775,7 +779,7 @@
     <img src="https://media.licdn.com/dms/image/v2/D5603AQEWAtayBiF8oA/profile-displayphoto-scale_400_400/B56ZjB4F86HAAo-/0/1755599366925?e=1766620800&v=beta&t=fubxyzJZ2CDn3QJgiKmD0xZQaebefhKrt5oKRpK2yZ4" 
          alt="Ubaid Photo" class="profile-img fade-in" />
     <div class="hero-content">
-      <h1 class="fade-in">Ubaid</h1>
+      <h1 class="fade-in">Ubaid KH</h1>
       <p class="tagline fade-in">Linux System Administrator</p>
       <p class="fade-in">Experienced Linux Administrator with expertise in managing and securing Linux servers. Skilled in automation, troubleshooting, and service configurations with a strong background in system administration and network security. Passionate about creating efficient, secure, and scalable infrastructure solutions.</p>
       
@@ -783,8 +787,8 @@
         <a href="#contact" class="btn btn-primary fade-in">
           <i class="fas fa-paper-plane"></i> Hire Me
         </a>
-        <!-- Replace YOUR_GOOGLE_DRIVE_FILE_ID with your actual Google Drive CV file ID -->
-        <a href="https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID" 
+        <!-- GitHub CV Download -->
+        <a href="https://raw.githubusercontent.com/ubaidkh07/ubaidkh07.github.io/main/Ubaid_CV.pdf" 
            class="btn btn-secondary fade-in" target="_blank">
           <i class="fas fa-download"></i> Download CV
         </a>
@@ -815,28 +819,28 @@
     <p class="section-intro fade-in">I provide comprehensive Linux administration services to ensure your systems are secure, optimized, and running smoothly. With expertise across various distributions and tools, I can handle everything from basic server setup to complex infrastructure management.</p>
     <div class="services">
       <div class="service-card fade-in">
-        <h3><i class="fas fa-server"></i> Linux Server Setup</h3>
-        <p>Full installation, configuration, and optimization of Linux environments including CentOS, Ubuntu, and AlmaLinux distributions. Custom setup based on your specific requirements.</p>
+        <h3>Linux Server Setup & Administration</h3>
+        <p>I provide complete Linux server setup, optimization, and troubleshooting. This includes user & group management, SSH hardening, firewall configuration, disk management, process monitoring, and automated task scheduling.</p>
       </div>
       <div class="service-card fade-in">
-        <h3><i class="fas fa-chart-line"></i> Server Monitoring</h3>
-        <p>Implement monitoring tools like Nagios, Zabbix, and Prometheus to track server performance, uptime, and resource utilization with real-time alerts and dashboards.</p>
+        <h3>Web Hosting & cPanel/WHM Management</h3>
+        <p>I configure and manage hosting environments using cPanel/WHM, including FTP setup, website deployment, account management, backups, and migration between hosting providers. I also manage IP-based and name-based virtual hosting.</p>
       </div>
       <div class="service-card fade-in">
-        <h3><i class="fas fa-shield-alt"></i> Security Hardening</h3>
-        <p>Firewall configuration, SSH hardening, intrusion detection systems, regular patching, and security audits to protect your infrastructure from threats.</p>
+        <h3> DNS Configuration & Network Management</h3>
+        <p>I handle end-to-end DNS management, including A, MX, CNAME, TXT, and CAA records, nameserver setup, domain mapping, and troubleshooting using tools like dig, nslookup, and trace. I also provide IP blocking, firewall rules, and network-level security.</p>
       </div>
       <div class="service-card fade-in">
-        <h3><i class="fas fa-robot"></i> Automation & Scripting</h3>
-        <p>Create Bash, Python, and Ansible scripts to automate routine tasks and deployments for improved efficiency and reduced human error.</p>
+        <h3> LAMP/LEMP Server & Web Application Deployment</h3>
+        <p>I set up Apache, PHP, and MySQL servers (LAMP/LEMP) with proper configuration and hardening. This includes PHP compilation, database setup, mail server configuration, virtual hosts, SSL setup, and performance tuning.</p>
       </div>
       <div class="service-card fade-in">
-        <h3><i class="fas fa-hdd"></i> Backup Solutions</h3>
-        <p>Design and implement robust backup strategies using tools like Rsync, Bacula, and Duplicity for data protection with encryption and versioning.</p>
+        <h3> Security, Malware Removal & Server Hardening</h3>
+        <p>I secure servers using best practices, including firewall rules, SSH security, malware scanning/removal, file permission hardening, and log analysis. I also secure WordPress, cPanel services, and mail servers.</p>
       </div>
       <div class="service-card fade-in">
-        <h3><i class="fas fa-cloud"></i> Cloud Integration</h3>
-        <p>Deploy and manage Linux servers on AWS, Azure, and Google Cloud platforms with proper security configurations and cost optimization.</p>
+        <h3> Shell Scripting & Automation Solutions </h3>
+        <p>I automate server operations using Bash scripting, including backup automation, cron scheduling, package updates, monitoring scripts, and custom workflow automation for system administration tasks.</p>
       </div>
     </div>
   </div>
@@ -888,10 +892,6 @@
         <h3><i class="fas fa-eye"></i> Nagios on AlmaLinux</h3>
         <p>Implemented comprehensive server monitoring with Nagios on AlmaLinux, monitoring 50+ services across 10 servers with custom plugins and alerting system.</p>
       </div>
-      <div class="project-card fade-in">
-        <h3><i class="fas fa-save"></i> Automated Backup System</h3>
-        <p>Created an automated backup solution using Bash scripting and Rsync with encryption and incremental backups. Implemented retention policies and verification scripts.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -904,7 +904,7 @@
     <div class="certificates-grid">
       <div class="certificate-card fade-in">
         <h3><i class="fas fa-database"></i> MySQL Certification</h3>
-        <div class="certificate-issuer">Oracle Corporation</div>
+        <div class="certificate-issuer">HackerRank</div>
         <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2023</div>
         <p>Comprehensive certification covering MySQL database administration, optimization, security, and performance tuning. Skills include database design, backup/recovery, and query optimization.</p>
       </div>
@@ -917,25 +917,25 @@
       <div class="certificate-card fade-in">
         <h3><i class="fas fa-microchip"></i> Computer Hardware & Networking</h3>
         <div class="certificate-issuer">A+ Certification Equivalent</div>
-        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2022</div>
+        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2020</div>
         <p>Comprehensive hardware and networking certification covering PC assembly, troubleshooting, network configuration, and infrastructure management. Includes hands-on lab experience.</p>
       </div>
       <div class="certificate-card fade-in">
         <h3><i class="fas fa-cpanel"></i> cPanel Professional</h3>
         <div class="certificate-issuer">cPanel University</div>
-        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2023</div>
+        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2025</div>
         <p>Professional certification in cPanel administration covering server management, WHM configuration, account management, security best practices, and troubleshooting common issues.</p>
       </div>
       <div class="certificate-card fade-in">
         <h3><i class="fas fa-server"></i> WHM Administration</h3>
-        <div class="certificate-issuer">Web Host Manager Academy</div>
-        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2023</div>
+        <div class="certificate-issuer">cPanel University</div>
+        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2025</div>
         <p>Advanced WHM administration certification focusing on server configuration, package management, DNS configuration, Apache optimization, and server security implementation.</p>
       </div>
       <div class="certificate-card fade-in">
         <h3><i class="fas fa-shield-alt"></i> Imunify360 Security</h3>
-        <div class="certificate-issuer">CloudLinux</div>
-        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2024</div>
+        <div class="certificate-issuer">cPanel University</div>
+        <div class="certificate-date"><i class="far fa-calendar"></i> Completed: 2025</div>
         <p>Specialized security certification covering Imunify360 deployment, configuration, malware detection, firewall management, and security automation for Linux servers.</p>
       </div>
     </div>
@@ -946,28 +946,59 @@
 <section id="contact">
   <div class="section-container">
     <h2 class="fade-in">Contact Me</h2>
-    <p class="section-intro fade-in" style="text-align: center; margin-bottom: 40px;">Interested in working together? Send me a message and I'll respond as soon as possible. Let's discuss how I can help with your Linux administration needs.</p>
+    <p class="section-intro fade-in" style="text-align: center; margin-bottom: 40px;">
+      Interested in working together? Send me a message and I'll respond as soon as possible. 
+      Let's discuss how I can help with your Linux administration needs.
+    </p>
     <div class="contact fade-in">
-      <form id="contact-form">
+      <!-- Using Formspree for form handling - REPLACE YOUR_FORM_ID with actual Formspree form ID -->
+      <form id="contact-form" action="https://formspree.io/f/xjknrdol" method="POST">
+        <!-- Add your email as recipient -->
+        <input type="hidden" name="_replyto" value="ubaidkhamzaa@gmail.com">
+        <input type="hidden" name="_subject" value="New Portfolio Contact - Linux Admin">
+        
         <div class="form-group">
-          <label for="name">Full Name</label>
+          <label for="name">Full Name *</label>
           <input type="text" id="name" name="name" placeholder="Enter your full name" required />
         </div>
         
         <div class="form-group">
-          <label for="email">Email Address</label>
+          <label for="email">Email Address *</label>
           <input type="email" id="email" name="email" placeholder="Enter your email address" required />
         </div>
         
         <div class="form-group">
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+          <label for="phone">Phone Number (Optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
         </div>
+    
+        
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" rows="6" 
+                    placeholder="Tell me about your project or inquiry..." required></textarea>
+        </div>
+        
+        <!-- Formspree honeypot field (for spam protection) -->
+        <input type="text" name="_gotcha" style="display:none">
         
         <button type="submit">
           <i class="fas fa-paper-plane"></i> Send Message
         </button>
       </form>
+      
+      <!-- Alternative contact methods -->
+      <div style="text-align: center; margin-top: 30px; padding-top: 30px; border-top: 1px solid #eee;">
+        <p style="margin-bottom: 20px; color: #666;">Or contact me directly:</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+          <a href="mailto:ubaidkhamzaa@gmail.com" style="display: inline-flex; align-items: center; gap: 8px; color: #4CAF50; text-decoration: none;">
+            <i class="fas fa-envelope"></i> ubaidkhamzaa@gmail.com
+          </a>
+          <a href="tel:9072788258" style="display: inline-flex; align-items: center; gap: 8px; color: #4CAF50; text-decoration: none;">
+            <i class="fas fa-phone"></i> +91 9072788258
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1096,7 +1127,7 @@
     // Download CV notification
     const cvButtons = document.querySelectorAll('.cv-button, .btn-secondary');
     cvButtons.forEach(button => {
-      if (button.getAttribute('href') && button.getAttribute('href').includes('drive.google.com')) {
+      if (button.getAttribute('href') && button.getAttribute('href').includes('github.com')) {
         button.addEventListener('click', function(e) {
           // Create a notification
           const notification = document.createElement('div');
@@ -1116,7 +1147,7 @@
             gap: 10px;
             font-weight: 600;
           `;
-          notification.innerHTML = '<i class="fas fa-check"></i> Downloading CV...';
+          notification.innerHTML = '<i class="fas fa-check"></i> Downloading CV from GitHub...';
           document.body.appendChild(notification);
           
           setTimeout(() => {
@@ -1146,7 +1177,7 @@
     // Form submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-      contactForm.addEventListener('submit', function(e) {
+      contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         const submitButton = this.querySelector('button[type="submit"]');
@@ -1154,12 +1185,65 @@
         submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitButton.disabled = true;
         
-        // Simulate form submission (in real scenario, connect to backend)
-        setTimeout(() => {
-          // Show success message
-          const successMsg = document.createElement('div');
-          successMsg.style.cssText = `
-            background: #4CAF50;
+        // Remove any existing messages
+        const existingMessages = this.parentNode.querySelectorAll('.form-message');
+        existingMessages.forEach(msg => msg.remove());
+        
+        try {
+          // Get form data
+          const formData = new FormData(this);
+          
+          // Send to Formspree
+          const response = await fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          
+          if (response.ok) {
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.className = 'form-message';
+            successMsg.style.cssText = `
+              background: #4CAF50;
+              color: white;
+              padding: 20px;
+              border-radius: 8px;
+              margin-top: 20px;
+              text-align: center;
+              font-weight: 600;
+              animation: fadeIn 0.5s ease;
+            `;
+            successMsg.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you within 24 hours.';
+            
+            // Insert success message
+            this.parentNode.insertBefore(successMsg, this.nextSibling);
+            
+            // Reset form
+            this.reset();
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+            
+            // Remove success message after 5 seconds
+            setTimeout(() => {
+              successMsg.style.animation = 'fadeOut 0.5s ease';
+              setTimeout(() => {
+                if (successMsg.parentNode) {
+                  successMsg.parentNode.removeChild(successMsg);
+                }
+              }, 500);
+            }, 5000);
+          } else {
+            throw new Error('Form submission failed');
+          }
+        } catch (error) {
+          // Show error message
+          const errorMsg = document.createElement('div');
+          errorMsg.className = 'form-message';
+          errorMsg.style.cssText = `
+            background: #f44336;
             color: white;
             padding: 20px;
             border-radius: 8px;
@@ -1168,29 +1252,27 @@
             font-weight: 600;
             animation: fadeIn 0.5s ease;
           `;
-          successMsg.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+          errorMsg.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Failed to send message. Please try again or email me directly.';
           
-          this.parentNode.insertBefore(successMsg, this.nextSibling);
+          this.parentNode.insertBefore(errorMsg, this.nextSibling);
           
-          // Reset form
-          this.reset();
           submitButton.innerHTML = originalText;
           submitButton.disabled = false;
           
-          // Remove success message after 5 seconds
+          // Remove error message after 5 seconds
           setTimeout(() => {
-            successMsg.style.animation = 'fadeOut 0.5s ease';
+            errorMsg.style.animation = 'fadeOut 0.5s ease';
             setTimeout(() => {
-              if (successMsg.parentNode) {
-                successMsg.parentNode.removeChild(successMsg);
+              if (errorMsg.parentNode) {
+                errorMsg.parentNode.removeChild(errorMsg);
               }
             }, 500);
           }, 5000);
-        }, 2000);
+        }
       });
     }
     
-    // Add fade animations
+    // Add CSS for animations
     const fadeStyle = document.createElement('style');
     fadeStyle.textContent = `
       @keyframes fadeIn {
