@@ -748,7 +748,8 @@
 <!-- Fixed Header with Navigation -->
 <header>
   <div class="header-container">
-    <a href="#home" class="logo">Ubaid KH<span>.</span></a>
+  <a href="javascript:void(0)" class="logo" id="logo-scroll">Ubaid KH<span>.</span></a>
+
     
     <button class="menu-toggle" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
@@ -1032,6 +1033,13 @@
 </footer>
 
 <script>
+  document.getElementById('logo-scroll').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+  
   // Navigation functionality with smooth scrolling
   document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
