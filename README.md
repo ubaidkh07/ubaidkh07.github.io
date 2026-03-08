@@ -18,8 +18,7 @@ Files
 Setup
 ------
 1. Fork or clone this repo.
-   ```
-   git clone https://github.com/ubaidkh07/ubaidkh07.github.io.git
+   ``` git clone https://github.com/ubaidkh07/ubaidkh07.github.io.git ```
 3. Edit `index.html` for custom content.
 4. Update assets (images, PDF).
 5. Enable GitHub Pages in repo settings (source: main branch).
