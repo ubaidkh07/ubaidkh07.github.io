@@ -2,10 +2,6 @@ Ubaid KH Portfolio
 -------------------
 Personal portfolio website hosted on GitHub Pages. Features my resume, profile, and professional info.
 
-[
-[
-[
-
 Live Site
 ----------
 Visit my portfolio at [ubaidkh07.github.io](https://ubaidkh07.github.io).
